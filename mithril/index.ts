@@ -1,6 +1,8 @@
+// globals
 const root = document.body;
 let count = 0;
 
+// views
 const Hello = {
   view: function () {
     return m("main", [
@@ -22,13 +24,14 @@ const Splash = {
   },
 };
 
+// routing
 m.route(root, "/splash", {
   "/splash": Splash,
   "/hello": Hello,
 });
 
-const apiToken: string =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlbXBsb3llZV8yIn0.BIB6Uyzc__2rh9u6199pHJ5aYkwE3c7tFlWkkvmatEA";
+// XHR
+const apiToken: string = "<api_token>";
 
 const getTask = function () {
   m.request({
