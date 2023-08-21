@@ -6,8 +6,6 @@ built with mithril.
 ## requirements
 
 - [Deno](https://deno.land/manual@v1.36.1/getting_started/installation)
-- [Mithril](https://mithril.js.org/index.html)
-- [ESBuild](https://esbuild.github.io/getting-started/#deno)
 
 ## development
 
