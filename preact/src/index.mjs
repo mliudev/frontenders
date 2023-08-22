@@ -4,7 +4,9 @@ import { html } from "./lib/htmShim.mjs";
 class MyButton extends Component {
   render(props) {
     return html`
-      <button style=${props.style} onClick=${props.onClick}>${props.children}</button>
+      <button style=${props.style} onClick=${props.onClick}>
+        ${props.children}
+      </button>
     `;
   }
 }
@@ -16,12 +18,15 @@ class App extends Component {
     this.setState({ count: count + 1 });
   }
 
-  render(props) {
+  render() {
     return html`
       <div>
         <p class="count">Count: ${this.state.count}</p>
-        <${MyButton} style="color: purple;" onClick=${() =>
-      this.onClick(this.state.count)}>Click Me!<//>
+        <${MyButton}
+          style="color: purple;"
+          onClick=${() => this.onClick(this.state.count)}
+          >Click Me!<//
+        >
       </div>
     `;
   }
