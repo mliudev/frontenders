@@ -4,7 +4,7 @@ Tutorial app for setting up a preact development environment.
 
 ## requirements
 
-- Python 3.11
+- deno
 
 ## development
 
