@@ -13,5 +13,5 @@ A repository for comparing minimalist frontend frameworks.
 ## frameworks
 
 - [x] mithril
-- [ ] preact
+- [x] preact
 - [ ] solid
