@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "preact": "npm:preact@^10.17.1",
+    "htm": "npm:htm@^3.1.1",
+    "esbuild": "https://deno.land/x/esbuild@v0.19.0/mod.js"
+  }
+}
