@@ -10,7 +10,6 @@ for BINARY in deno; do
     fi
 done
 
-echo $TOP
 # link index.html to dist folder
 ln -sf $TOP/src/index.html $TOP/dist/index.html
 

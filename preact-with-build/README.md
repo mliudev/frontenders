@@ -8,6 +8,13 @@ Tutorial app for setting up a preact development environment.
 
 ## development
 
+Create `node_modules` folder for dependencies:
+
+```bash
+rm -rf node_modules/
+deno cache --node-modules-dir --reload src/index.ts
+```
+
 ```bash
 ./run-dev.sh
 ```
