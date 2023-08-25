@@ -1,0 +1,15 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "strict": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "target": "es6",
+    "module": "es6",
+    "moduleResolution": "nodenext",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*", "node_modules/*"]
+    }
+  }
+}
