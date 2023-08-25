@@ -3,3 +3,7 @@ dist/
 
 # ignore node_modules folder
 node_modules/
+
+# ignore all js files for typescript projects
+preact-no-build/**/*.js
+preact-with-build/**/*.js
