@@ -1,0 +1,6 @@
+# ignore vendored files
+vendor/
+
+# ignore generated js files
+*.js
+

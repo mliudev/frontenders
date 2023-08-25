@@ -1,0 +1,11 @@
+{
+  "include": ["src/**/*"],
+  "exclude": ["src/vendor/"],
+  "compilerOptions": {
+    "strict": true,
+    "target": "es6",
+    "module": "es6",
+    "moduleResolution": "node",
+    "baseUrl": "src/vendor/"
+  }
+}
