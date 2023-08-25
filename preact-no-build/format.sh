@@ -11,4 +11,4 @@ for BINARY in deno; do
 done
 
 # start prettier formatter
-deno run --allow-read --allow-write --allow-env "npm:prettier" . --check --write 
+deno run --allow-sys --allow-read --allow-env --allow-run "npm:chokidar-cli" "**/*.ts" "**/*.html" -c "deno run --allow-read --allow-write --allow-env 'npm:prettier' . --check --write"
