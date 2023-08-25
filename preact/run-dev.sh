@@ -10,5 +10,9 @@ for BINARY in deno; do
     fi
 done
 
-# start python http server
-exec deno run --allow-net --allow-read https://deno.land/std@0.159.0/http/file_server.ts --port 8000 src/
+echo $TOP
+# link index.html to dist folder
+ln -sf $TOP/src/index.html $TOP/dist/index.html
+
+# start deno dev server
+deno run --allow-env --allow-run --allow-read serve-dev.ts
