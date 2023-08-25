@@ -4,12 +4,12 @@ Tutorial app for setting up a preact development environment.
 
 ## requirements
 
-- Python 3.11
+- deno
 
 ## development
 
 ```bash
-./run.sh
+./run-dev.sh
 ```
 
 Navigate to <http://localhost:8000/index.html>.
@@ -17,9 +17,9 @@ Navigate to <http://localhost:8000/index.html>.
 In separate terminal windows run the linter and formatter:
 
 ```bash
-./lint.sh
+./tsc.sh
 ```
 
 ```bash
-format.sh
+./format.sh
 ```

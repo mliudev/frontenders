@@ -10,5 +10,9 @@ for BINARY in deno; do
     fi
 done
 
-# start deno linter
-exec deno lint --watch
+echo $TOP
+# link index.html to dist folder
+ln -sf $TOP/src/index.html $TOP/dist/index.html
+
+# start deno dev server
+deno run --allow-env --allow-run --allow-read serve-dev.ts
