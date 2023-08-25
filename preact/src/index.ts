@@ -1,8 +1,14 @@
-import { Component, render } from "preact";
-import { html } from "./lib/htmShim.mjs";
+import { Component, render, ComponentChildren } from "preact";
+import { html } from "./lib/htmShim.ts";
 
-class MyButton extends Component {
-  render(props) {
+type MyButtonProps = {
+  style: string;
+  onClick: MouseEvent;
+  children: ComponentChildren;
+};
+
+class MyButton extends Component<MyButtonProps> {
+  render(props: MyButtonProps) {
     return html`
       <button style=${props.style} onClick=${props.onClick}>
         ${props.children}
@@ -14,14 +20,14 @@ class MyButton extends Component {
 class App extends Component {
   state = { count: 0 };
 
-  onClick(count) {
+  onClick(count: number) {
     this.setState({ count: count + 1 });
   }
 
   render() {
     return html`
       <div>
-        <p class="count">Count: ${this.state.count}</p>
+        <p class="count">Count is: ${this.state.count}</p>
         <${MyButton}
           style="color: purple;"
           onClick=${() => this.onClick(this.state.count)}
